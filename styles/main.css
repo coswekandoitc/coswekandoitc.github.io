@@ -95,6 +95,7 @@ li {
 .video-clips > * {
   width: 100%;
   min-height: 15rem;
+  aspect-ratio: 1.75 / 1;
 
   -webkit-box-shadow: 5px 2px 11px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 2px 11px -1px rgba(0, 0, 0, 0.75);
