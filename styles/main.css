@@ -63,7 +63,7 @@ p {
 }
 
 h2 {
-  border-bottom: #4b4b4b thin solid;
+  border-bottom: #4b4b4b 2px solid;
   margin-bottom: 0.5rem;
   line-height: 3ch;
 
