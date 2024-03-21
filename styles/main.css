@@ -5,6 +5,11 @@
 }
 
 html {
+  --logo-size: 10rem;
+  --fs-xl: 1.5rem;
+  --fs-400: 2rem;
+  --fs-300: 1rem;
+
   background-color: #161616;
 
   font-family: "Ramabhadra", sans-serif;
@@ -18,13 +23,22 @@ html {
   text-size-adjust: none;
 }
 
+@media (min-width: 40em) {
+  html {
+    --logo-size: 18rem;
+    --fs-xl: 2.5rem;
+    --fs-400: 2.5rem;
+    --fs-300: 1.8rem;
+  }
+}
+
 header {
   color: white;
 
   background-color: #0a0a0a;
   padding: 0 3rem;
 
-  font-size: larger;
+  font-size: var(--fs-xl);
   font-family: "Black Ops One", system-ui;
   font-weight: 200;
   font-style: normal;
@@ -41,12 +55,13 @@ header {
 }
 
 .header-logo {
-  width: 8ch;
+  width: var(--logo-size);
 }
 
 li,
 p {
   color: hsl(0, 0%, 81%);
+  font-size: var(--fs-300);
 }
 
 .formatted-section {
@@ -54,10 +69,12 @@ p {
   margin-inline: max(3rem, 12vw);
 }
 
-.formatted-section h2 {
+h2 {
   border-bottom: #4b4b4b thin solid;
   margin-bottom: 0.5rem;
   line-height: 3ch;
+
+  font-size: var(--fs-400);
 }
 
 .banner-container {
@@ -77,9 +94,6 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(30ch, 1fr));
   column-gap: 3rem;
   row-gap: 3rem;
-}
-
-.split > * {
 }
 
 li {
@@ -136,6 +150,10 @@ footer {
 
   display: flex;
   justify-content: space-around;
+}
+
+footer * {
+  font-size: 1rem;
 }
 
 #scrollDown {
