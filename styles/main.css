@@ -187,12 +187,18 @@ footer * {
   height: 3rem;
   width: 3rem;
 
-  background-color: unset;
   border: unset;
 
   cursor: pointer;
 
-  animation: forwards shakeup 1s;
+  animation: forwards shakeup 300ms;
+
+  background-color: hsl(0, 0%, 16%);
+  border-radius: 1.5rem;
+}
+
+#scrollUp:hover {
+  background-color: hsl(0, 0%, 21%);
 }
 
 @keyframes shake {
@@ -215,16 +221,13 @@ footer * {
 
 @keyframes shakeup {
   0% {
-    transform: rotateZ(15deg);
-  }
-  25% {
-    transform: rotateZ(-15deg);
+    transform: rotateZ(180deg);
   }
   50% {
-    transform: rotateZ(15deg);
+    transform: rotateZ(155deg);
   }
   75% {
-    transform: rotateZ(-15deg);
+    transform: rotateZ(195deg);
   }
   100% {
     transform: rotateZ(180deg);
