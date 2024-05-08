@@ -11,6 +11,8 @@ html {
   --fs-300: 1rem;
   --fs-200: 1rem;
 
+  --gallery-sizing: 14rem;
+
   background-color: #161616;
 
   font-family: "Ramabhadra", sans-serif;
@@ -186,7 +188,6 @@ a:hover {
 }
 
 .gallery-figure > div:last-child {
-  min-width: 14rem;
   flex: 4;
 }
 
@@ -195,7 +196,7 @@ a:hover {
   object-fit: cover;
   flex: 1;
   width: auto;
-  max-height: 14rem;
+  max-height: var(--gallery-sizing);
 }
 
 /* @media (max-width: 50rem) {
@@ -283,6 +284,8 @@ footer * {
     --fs-400: 2rem;
     --fs-300: 0.8rem;
     --fs-200: 0.5rem;
+
+    --gallery-sizing: 10rem;
   }
 
   header,
@@ -301,6 +304,10 @@ footer * {
   .banner-mobile {
     display: block;
     width: 100%;
+  }
+
+  .gallery-figure > img {
+    max-height: 10rem;
   }
 }
 
