@@ -195,6 +195,12 @@ a:hover {
   flex: 1;
   width: auto;
   max-height: var(--gallery-sizing);
+
+  cursor: pointer;
+}
+
+.gallery-figure > img:hover {
+  opacity: 0.5;
 }
 
 /* @media (max-width: 50rem) {
