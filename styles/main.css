@@ -279,6 +279,36 @@ footer * {
   background-color: hsl(0, 0%, 21%);
 }
 
+.border-container {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 50px;
+  z-index: -1;
+
+  animation: forwards ease-in fade-in 10s;
+}
+
+.celtic-border {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.border-up {
+  animation: infinite linear celtic-border-scroll-up 10s;
+}
+
+.border-down {
+  animation: infinite linear celtic-border-scroll 10s;
+}
+
+.celtic-tile {
+  position: absolute;
+  top: 0;
+}
+
 @media (max-width: 15cm) {
   html {
     --logo-size: 100%;
@@ -343,5 +373,32 @@ footer * {
   }
   100% {
     transform: rotateZ(180deg);
+  }
+}
+
+@keyframes celtic-border-scroll {
+  from {
+    top: 0;
+  }
+  to {
+    top: 267px;
+  }
+}
+
+@keyframes celtic-border-scroll-up {
+  from {
+    top: 267px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
