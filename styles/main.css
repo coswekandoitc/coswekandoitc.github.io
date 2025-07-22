@@ -381,13 +381,13 @@ footer * {
     top: 0;
   }
   to {
-    top: 267px;
+    top: 270px;
   }
 }
 
 @keyframes celtic-border-scroll-up {
   from {
-    top: 267px;
+    top: 270px;
   }
   to {
     top: 0;
