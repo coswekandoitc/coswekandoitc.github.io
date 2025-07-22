@@ -87,6 +87,7 @@ h2 {
 .banner-image {
   opacity: 0.6;
   height: 100vh;
+  background-color: #0a0a0a;
 }
 
 .banner-mobile {
@@ -171,11 +172,14 @@ a:hover {
   border-radius: 3px;
 
   align-self: center;
+  background-color: #0a0a0a;
 }
 
 .profile-picture-container > img {
   width: auto;
   height: 100%;
+
+  background-color: #0a0a0a;
 }
 
 .gallery-figure {
@@ -197,6 +201,8 @@ a:hover {
   max-height: var(--gallery-sizing);
 
   cursor: pointer;
+
+  background-color: #0a0a0a;
 }
 
 .gallery-figure > img:hover {
