@@ -22,6 +22,7 @@ function CelticBorderScroll() {
       celticTile.src = CelticTileLocation;
       celticTile.className = "celtic-tile";
       celticTile.style.top = i * 270;
+      celticTile.alt = "";
       border.appendChild(celticTile);
     }
   });
