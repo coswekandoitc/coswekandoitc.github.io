@@ -13,15 +13,16 @@ function CelticBorderScroll() {
   const footerY = footer.getBoundingClientRect().bottom + window.scrollY;
 
   borderContainer.forEach((bc) => {
-    bc.style.height = footerY;
+    bc.style.height = `${footerY}px`;
   });
 
   borders.forEach((border) => {
     for (let i = 1; i <= footerY / 50; i++) {
+      debugger;
       let celticTile = document.createElement("img");
       celticTile.src = CelticTileLocation;
       celticTile.className = "celtic-tile";
-      celticTile.style.top = i * 270;
+      celticTile.style.top = `${i * 270}px`;
       celticTile.alt = "";
       border.appendChild(celticTile);
     }
