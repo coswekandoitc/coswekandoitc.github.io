@@ -18,7 +18,6 @@ function CelticBorderScroll() {
 
   borders.forEach((border) => {
     for (let i = 1; i <= footerY / 50; i++) {
-      debugger;
       let celticTile = document.createElement("img");
       celticTile.src = CelticTileLocation;
       celticTile.className = "celtic-tile";
